@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/sky_dark"
+        app:title="회원가입"
+        app:titleCentered="true"
+        app:titleTextColor="@android:color/white"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="@drawable/ic_arrow_back_24"
+        app:navigationIconTint="@android:color/white" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingTop="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 이름 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="이름"
+                app:boxStrokeColor="@color/sky_primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="@color/sky_primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    style="@style/AjajaEditTextCursor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 학교급 / 학년 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilSchoolLevel"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:hint="학교급"
+                    app:boxStrokeColor="@color/sky_primary"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:hintTextColor="@color/sky_primary">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/actSchoolLevel"
+                        style="@style/AjajaDropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilGrade"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="학년"
+                    app:boxStrokeColor="@color/sky_primary"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:hintTextColor="@color/sky_primary">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/actGrade"
+                        style="@style/AjajaDropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!-- 과목명 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSubject"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="과목명"
+                app:boxStrokeColor="@color/sky_primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="@color/sky_primary">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/actSubject"
+                    style="@style/AjajaDropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 아이디 + 중복확인 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilUserId"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:layout_marginEnd="8dp"
+                    android:hint="아이디"
+                    app:boxStrokeColor="@color/sky_primary"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:hintTextColor="@color/sky_primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etUserId"
+                        style="@style/AjajaEditTextCursor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCheckId"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="중복 확인"
+                    app:backgroundTint="@color/sky_primary"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- 비밀번호 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="비밀번호"
+                app:endIconMode="password_toggle"
+                app:boxStrokeColor="@color/sky_primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="@color/sky_primary"
+                app:endIconTint="@color/sky_primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    style="@style/AjajaEditTextCursor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 비밀번호 확인 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPasswordConfirm"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="비밀번호 확인"
+                app:endIconMode="password_toggle"
+                app:boxStrokeColor="@color/sky_primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="@color/sky_primary"
+                app:endIconTint="@color/sky_primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPasswordConfirm"
+                    style="@style/AjajaEditTextCursor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 가입 버튼 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignup"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="회원가입 완료"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="24dp"
+                app:backgroundTint="@color/sky_primary"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

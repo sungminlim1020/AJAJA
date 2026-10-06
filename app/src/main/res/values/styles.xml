@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- (기존에 쓰시던) 둥근 상단 모양 -->
+    <style name="ShapeAppearanceOverlay.App.RoundedTop" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <!-- EditText 커서를 하늘색으로 -->
+    <style name="AjajaEditTextCursor">
+        <item name="android:textCursorDrawable">@drawable/edittext_cursor_sky</item>
+    </style>
+
+    <style name="AjajaDropdown" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:popupBackground">@color/sky_primary_variant</item>
+    </style>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Ajaja" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- ❌ 오류나는 Dynamic Color 속성 제거 -->
+        <!-- 이 버전의 Material3에서는 지원 안함 -->
+
+        <!-- ⭐ 시스템 색상이 앱에 개입하지 않도록 statusBar 지정 -->
+        <item name="android:statusBarColor">@color/sky_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- ⭐ 네비게이션바 색(하단 바)까지 통일하려면 ↓ 추가 -->
+        <item name="android:navigationBarColor">@color/sky_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <!-- 앱 전체 대표 색도 sky_dark 로 강제 지정 -->
+        <item name="colorPrimary">@color/sky_dark</item>
+        <item name="colorPrimaryContainer">@color/sky_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- 기타 색상들 -->
+        <item name="colorOutline">@color/sky_primary</item>
+        <item name="colorOutlineVariant">@color/sky_primary_variant</item>
+        <item name="colorOnSurfaceVariant">@color/sky_primary</item>
+
+        <item name="colorControlActivated">@color/sky_primary</item>
+
+    </style>
+
+    <style name="Theme.Ajaja" parent="Base.Theme.Ajaja"/>
+</resources>

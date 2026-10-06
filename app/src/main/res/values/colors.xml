@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 대표 하늘색 팔레트 -->
+    <color name="sky_primary">#03A9F4</color><!-- 기본 하늘색 -->
+    <color name="sky_dark">#54B4E6</color>
+    <color name="sky_primary_variant">#81D4FA</color>  <!-- 밝은 하늘색 -->
+    <color name="sky_on_primary">#FFFFFF</color>       <!-- 하늘색 위 글자색 -->
+    <color name="purple_500">#6200EE</color>
+</resources>

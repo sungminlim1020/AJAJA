@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_class"
+        android:title="수업 관리"
+        android:background="@drawable/nav_item_background" />
+
+    <item
+        android:id="@+id/nav_notice"
+        android:title="공지/알림"
+        android:background="@drawable/nav_item_background" />
+
+    <item
+        android:id="@+id/nav_student"
+        android:title="내 정보"
+        android:background="@drawable/nav_item_background" />
+
+</menu>

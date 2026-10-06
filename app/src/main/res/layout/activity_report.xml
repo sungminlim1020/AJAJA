@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F8FF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 🔙 뒤로가기 + 제목 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_arrow_back_24"
+                android:tint="@color/sky_dark"
+                android:contentDescription="뒤로가기" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="학습 리포트"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:textColor="#212121" />
+
+        </LinearLayout>
+
+
+        <!-- 🔥 월 / 전체 탭 -->
+        <LinearLayout
+            android:id="@+id/tabContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tabMonth"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="월"
+                android:textSize="16sp"
+                android:background="@drawable/tab_unselected"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tabAll"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="전체"
+                android:textSize="16sp"
+                android:background="@drawable/tab_unselected"
+                android:textColor="@color/black"
+                android:layout_marginStart="12dp" />
+
+        </LinearLayout>
+
+
+        <!-- 🔽 월 선택 (2025년 11월 + 아래 화살표) -->
+        <LinearLayout
+            android:id="@+id/layoutSelectMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/tvSelectedMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2025년 11월"
+                android:textSize="20sp"
+                android:textColor="#212121"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivDropdown"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_drop_down_24"
+                android:tint="#212121"
+                android:layout_marginStart="6dp" />
+        </LinearLayout>
+
+
+        <!-- 📈 꺾은선 그래프 -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartWeek"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
