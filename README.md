@@ -19,25 +19,17 @@ GitHub 업로드: 2026.10
 
 ## 📱 앱 주요 화면 (Screenshots)
 
-
 | 1. 로그인 화면 | 2. 회원가입 화면 | 3. 얼굴인식 출석체크 |
 | :---: | :---: | :---: |
-| ![로그인](<img width="349" height="764" alt="아자자1" src="https://github.com/user-attachments/assets/08493e3c-66cf-437a-9264-d7554aac2cd3" />
-) | ![회원가입](<img width="350" height="763" alt="아자자2" src="https://github.com/user-attachments/assets/3c6c7547-5484-4a13-975e-ed8a25483dde" />
-) | ![출석체크](<img width="319" height="758" alt="아자자4" src="https://github.com/user-attachments/assets/0ace5ab8-865d-4d7a-8e85-34b0dc53d850" />
-) |
+| ![로그인](https://github.com/user-attachments/assets/08493e3c-66cf-437a-9264-d7554aac2cd3) | ![회원가입](https://github.com/user-attachments/assets/3c6c7547-5484-4a13-975e-ed8a25483dde) | ![출석체크](https://github.com/user-attachments/assets/0ace5ab8-865d-4d7a-8e85-34b0dc53d850) |
 
 | 4. 메인화면 | 5. 필기체 감지 과제물 체크 | 6. 제출 목록 화면 |
 | :---: | :---: | :---: |
-| ![메인화면](<img width="353" height="756" alt="아자자3" src="https://github.com/user-attachments/assets/3496de48-9521-454d-99f3-4f0bee4b1bfc" />
-) | ![필기체감지](<img width="319" height="715" alt="아자자5" src="https://github.com/user-attachments/assets/9d7eee68-9a5e-4818-a3d5-1cf407f62448" />
-) | ![제출목록](<img width="319" height="720" alt="아자자6" src="https://github.com/user-attachments/assets/70aa4fb6-46bc-4f1d-a0b1-e13956b74b7f" />
-) |
+| ![메인화면](https://github.com/user-attachments/assets/3496de48-9521-454d-99f3-4f0bee4b1bfc) | ![필기체감지](https://github.com/user-attachments/assets/9d7eee68-9a5e-4818-a3d5-1cf407f62448) | ![제출목록](https://github.com/user-attachments/assets/70aa4fb6-46bc-4f1d-a0b1-e13956b74b7f) |
 
 | 7. 제출 현황표 |
 | :---: |
-| ![제출현황표](<img width="318" height="717" alt="아자자7" src="https://github.com/user-attachments/assets/2030e886-72e9-472a-bd0b-c1e2a4778456" />
-) |
+| ![제출현황표](https://github.com/user-attachments/assets/2030e886-72e9-472a-bd0b-c1e2a4778456) |
 
 ---
 
