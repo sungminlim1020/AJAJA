@@ -17,6 +17,23 @@ GitHub 업로드: 2026.10
 
 ---
 
+## 📱 앱 주요 화면 (Screenshots)
+> **💡 스크린샷 넣는 법**: 프로젝트 루트 폴더에 `images` 폴더를 만들고 아래 파일명으로 이미지를 저장해주세요.
+
+| 1. 로그인 화면 | 2. 회원가입 화면 | 3. 얼굴인식 출석체크 |
+| :---: | :---: | :---: |
+| ![로그인](images/login.png) | ![회원가입](images/signup.png) | ![출석체크](images/attendance.png) |
+
+| 4. 메인화면 | 5. 필기체 감지 과제물 체크 | 6. 제출 목록 화면 |
+| :---: | :---: | :---: |
+| ![메인화면](images/main.png) | ![필기체감지](images/homework_check.png) | ![제출목록](images/submission_list.png) |
+
+| 7. 제출 현황표 |
+| :---: |
+| ![제출현황표](images/submission_status.png) |
+
+---
+
 ## ❗ 개발 동기 (학원/학생이 겪던 불편함)
 - **숙제 확인의 비효율**: 제출 사진을 사람이 일일이 확인해야 해서 시간이 많이 듦
 - **출석 체크의 불편함**: 단순 수기/체크 방식은 대리 출석/본인 확인이 어려움
@@ -54,7 +71,7 @@ GitHub 업로드: 2026.10
 4. 분류기(SVM) 학습 및 모델 저장(pkl) → 앱 적용/연동
 
 ### (B) 글씨 강도 분류 파이프라인 (Colab)
-1. 데이터셋 폴더 구조 확인(train/val, strong/weak/none 등)  
+1. 데이터셋 폴더 구조 확인(train/val, strong/weight/none 등)  
 2. 이미지 크기/배치 등 하이퍼파라미터 설정  
 3. 작은 CNN(Sequential) 모델 구성  
 4. 모델 학습(train/val) 진행  
